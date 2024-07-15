@@ -1,6 +1,7 @@
 import {Button, TextField} from "@vaadin/react-components";
 import {useState} from "react";
 import {ChatAIService} from "Frontend/generated/endpoints";
+import Markdown from "react-markdown";
 
 export default function ChatPage() {
     const [question, setQuestion] = useState<string>("");
@@ -29,7 +30,9 @@ export default function ChatPage() {
         {error && <p>{error}</p>}
         {response &&
             <div>
+                <Markdown>
                 {response}
+                </Markdown>
             </div>
 
         }

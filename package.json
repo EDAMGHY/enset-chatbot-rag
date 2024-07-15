@@ -29,6 +29,7 @@
     "lit": "3.1.4",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-markdown": "^9.0.1",
     "react-router-dom": "6.23.1"
   },
   "devDependencies": {
@@ -117,7 +118,7 @@
       "workbox-core": "7.1.0",
       "workbox-precaching": "7.1.0"
     },
-    "hash": "34c8809994a7384244d48c51a271da641eb15f8a7629e6ebe40c94abc6495979"
+    "hash": "09c859d29a9e4ae7a14c9de9a9942c59a0399b60a5f72dc91c18224555c9da95"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -146,6 +147,7 @@
     "@vaadin/vaadin-lumo-styles": "$@vaadin/vaadin-lumo-styles",
     "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles",
     "bootstrap": "$bootstrap",
-    "bootstrap-icons": "$bootstrap-icons"
+    "bootstrap-icons": "$bootstrap-icons",
+    "react-markdown": "$react-markdown"
   }
 }
