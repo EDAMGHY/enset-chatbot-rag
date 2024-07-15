@@ -5,6 +5,8 @@ export default function Layout() {
         <nav className="d-flex gap-m flex-wrap">
             <NavLink className="btn btn-outline-primary" to="/">Home</NavLink>
             <NavLink className="btn btn-outline-primary" to="/chat">Chat</NavLink>
+            <NavLink className="btn btn-outline-primary" to="/person">Person</NavLink>
+
         </nav>
         <main>
             <Outlet></Outlet>

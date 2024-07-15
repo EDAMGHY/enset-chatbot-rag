@@ -9,6 +9,7 @@ import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
+import org.springframework.jdbc.core.simple.JdbcClient;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,7 +24,8 @@ public class ChatAIService {
     @Value("classpath:/prompts/prompt-template.st")
     private Resource resource;
 
-    public ChatAIService(ChatClient.Builder builder, VectorStore vectorStore) {
+
+    public ChatAIService(ChatClient.Builder builder, VectorStore vectorStore, JdbcClient jdbcClient) {
         this.chatClient = builder.build();
         this.vectorStore = vectorStore;
     }
